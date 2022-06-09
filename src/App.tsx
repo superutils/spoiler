@@ -1,4 +1,3 @@
-import React from 'react'
 import Spoiler from './lib'
 
 function App () {
