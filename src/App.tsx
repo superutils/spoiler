@@ -1,15 +1,15 @@
-import React from 'react';
-import Spoiler from "./lib";
+import React from 'react'
+import Spoiler from './lib'
 
-function App() {
+function App () {
   return (
-    <div className="App">
+    <div className='App'>
       <Spoiler>
         <p>Hello, can you text me?</p>
         <p>OKAY!!</p>
       </Spoiler>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
