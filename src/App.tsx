@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Spoiler from "./lib";
 
 function App() {
