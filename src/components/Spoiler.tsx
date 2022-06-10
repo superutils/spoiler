@@ -1,3 +1,5 @@
+import spoilerURL from '../assets/gif/stars_spoiler.gif';
+
 interface ISpoiler {
   children?: JSX.Element|JSX.Element[]
   width?: string | number
@@ -18,7 +20,7 @@ export default function Spoiler (props: ISpoiler) {
         height: '100%',
         backgroundColor: 'rgb(0, 0, 0, 0.01)',
         backgroundSize: '1.5rem 1.5rem',
-        backgroundImage: `url(${require('../assets/gif/stars_spoiler.gif')})`
+        backgroundImage: `url(${spoilerURL})`
       }}
       />
       <div style={{
