@@ -1,6 +1,6 @@
 {
   "name": "@ungarson/spoiler",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "React component to hide other components, inspired by spoilers in telegram",
   "author": "@superutils",
   "keywords": [
@@ -33,7 +33,7 @@
   "scripts": {
     "start": "PORT=3124 react-scripts start",
     "build": "npm run build:ts && npm run build:cjs && cp ./src/assets ./lib/esm && cp ./src/assets ./lib/cjs",
-    "build:ts": "tsc",
+    "build:ts": "tsc --module es2015 --outDir lib/esm",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs"
   },
   "eslintConfig": {
