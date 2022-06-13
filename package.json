@@ -1,7 +1,7 @@
 {
     "name": "@ungarson/spoiler",
     "publishConfig": {
-      "@ungarson:registry": "https://npm.pkg.github.com"
+        "@ungarson:registry": "https://npm.pkg.github.com"
     },
     "version": "0.20.0",
     "main": "dist/index.cjs.js",
@@ -23,10 +23,6 @@
         "@typescript-eslint/parser": "^2.10.0",
         "babel-loader": "^8.2.4",
         "concurrently": "^5.3.0",
-        "eslint": "^6.6.0",
-        "eslint-config-prettier": "^6.15.0",
-        "eslint-plugin-prettier": "^3.1.4",
-        "eslint-plugin-react": "^7.19.0",
         "install-peers-cli": "^2.2.0",
         "prepend-file": "^2.0.0",
         "prettier": "^2.1.2",
@@ -44,7 +40,7 @@
         "build": "rollup -c",
         "build-watch": "rollup -c -w",
         "prepublishOnly": "npm run build",
-        "dev": "concurrently --kill-others \"npm run build-watch\" \"npm run start-example\"",
+        "dev": "concurrently --kill-others \"npm run build-watch\"",
         "test": "npm run test:lint && npm run test:unit",
         "pretest": "npm run build",
         "test:unit": "ts-node test/test.ts",
@@ -62,6 +58,3 @@
         "styled-components": "^5.2.1"
     }
 }
-
-
-
