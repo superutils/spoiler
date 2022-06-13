@@ -1,0 +1,67 @@
+{
+    "name": "@ungarson/spoiler",
+    "publishConfig": {
+      "@ungarson:registry": "https://npm.pkg.github.com"
+    },
+    "version": "0.20.0",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
+    "license": "MIT",
+    "types": "dist/index.d.ts",
+    "devDependencies": {
+        "@babel/core": "^7.17.9",
+        "@storybook/addon-actions": "^6.4.22",
+        "@storybook/addon-essentials": "^6.4.22",
+        "@storybook/addon-interactions": "^6.4.22",
+        "@storybook/addon-links": "^6.4.22",
+        "@storybook/react": "^6.4.22",
+        "@storybook/testing-library": "0.0.9",
+        "@types/react": "^16.9.55",
+        "@types/react-dom": "^16.9.9",
+        "@types/styled-components": "^5.1.4",
+        "@typescript-eslint/eslint-plugin": "^2.10.0",
+        "@typescript-eslint/parser": "^2.10.0",
+        "babel-loader": "^8.2.4",
+        "concurrently": "^5.3.0",
+        "eslint": "^6.6.0",
+        "eslint-config-prettier": "^6.15.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-react": "^7.19.0",
+        "install-peers-cli": "^2.2.0",
+        "prepend-file": "^2.0.0",
+        "prettier": "^2.1.2",
+        "rollup": "^2.33.1",
+        "rollup-plugin-typescript2": "^0.29.0",
+        "ts-node": "^9.0.0",
+        "tslib": "^2.0.3",
+        "typescript": "^4.0.5"
+    },
+    "peerDependencies": {
+        "react": "^16.14.0",
+        "react-dom": "^16.14.0"
+    },
+    "scripts": {
+        "build": "rollup -c",
+        "build-watch": "rollup -c -w",
+        "prepublishOnly": "npm run build",
+        "dev": "concurrently --kill-others \"npm run build-watch\" \"npm run start-example\"",
+        "test": "npm run test:lint && npm run test:unit",
+        "pretest": "npm run build",
+        "test:unit": "ts-node test/test.ts",
+        "test:lint": "eslint ./src/**/*.ts ./src/**/*.tsx ./example/src/**/*.ts ./example/src/**/*.tsx",
+        "test:lint:fix": "npm run test:lint -- --fix",
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook"
+    },
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "react": "^16.14.0",
+        "react-dom": "^16.14.0",
+        "styled-components": "^5.2.1"
+    }
+}
+
+
+
