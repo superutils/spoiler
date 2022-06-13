@@ -1,2 +1,2 @@
-import { TestComponent } from './components/TestComponent/TestComponent';
-export { TestComponent };
+import Spoiler from "./components/Spoiler";
+export { Spoiler };
