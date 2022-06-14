@@ -1,8 +1,5 @@
 {
     "name": "@ungarson/spoiler",
-    "publishConfig": {
-        "@ungarson:registry": "https://npm.pkg.github.com"
-    },
     "version": "0.20.0",
     "main": "dist/index.cjs.js",
     "module": "dist/index.esm.js",
