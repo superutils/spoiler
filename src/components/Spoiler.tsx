@@ -3,7 +3,7 @@ import * as React from "react";
 import { isNullOrUndefined } from "../utils/types";
 
 interface ISpoiler {
-  children?: JSX.Element | JSX.Element[] | string;
+  children?: JSX.Element | JSX.Element[] | string | boolean;
   width?: string | number;
   height?: string | number;
   isActive?: boolean;
