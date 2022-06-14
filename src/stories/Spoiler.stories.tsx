@@ -14,8 +14,3 @@ const Template: ComponentStory<typeof Spoiler> = (args) => (
 );
 
 export const Primary = Template.bind({});
-
-Primary.args = {
-  primary: true,
-  label: "Spoiler",
-};
