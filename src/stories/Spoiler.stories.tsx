@@ -1,9 +1,21 @@
 import * as React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { Spoiler } from "../index";
 
 export default {
-  title: "TestComponent",
+  title: "Spoiler",
   component: Spoiler,
-};
+} as ComponentMeta<typeof Spoiler>;
 
-export const Primary = () => <Spoiler />;
+const Template: ComponentStory<typeof Spoiler> = (args) => (
+  <Spoiler {...args}>
+    <p>HELLO, WORLD!</p>
+  </Spoiler>
+);
+
+export const Primary = Template.bind({});
+
+Primary.args = {
+  primary: true,
+  label: "Spoiler",
+};

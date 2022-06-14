@@ -1,4 +1,5 @@
 import typescript from "rollup-plugin-typescript2";
+import image from "@rollup/plugin-image";
 import pkg from "./package.json";
 
 export default [
@@ -9,6 +10,7 @@ export default [
       typescript({
         typescript: require("typescript"),
       }),
+      image(),
     ],
     output: [
       { file: pkg.main, format: "cjs" },

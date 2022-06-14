@@ -10,6 +10,7 @@
     "types": "dist/index.d.ts",
     "devDependencies": {
         "@babel/core": "^7.17.9",
+        "@rollup/plugin-image": "^2.1.1",
         "@storybook/addon-actions": "^6.4.22",
         "@storybook/addon-essentials": "^6.4.22",
         "@storybook/addon-interactions": "^6.4.22",
