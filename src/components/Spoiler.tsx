@@ -1,14 +1,18 @@
 import spoilerURL from "../assets/gif/stars_spoiler.gif";
 import * as React from "react";
+import { isNullOrUndefined } from "../utils/types";
 
 interface ISpoiler {
   children?: JSX.Element | JSX.Element[];
   width?: string | number;
   height?: string | number;
+  isActive?: boolean;
 }
 
 export default function Spoiler(props: ISpoiler) {
-  return (
+  const isNotActive = !props.isActive && !isNullOrUndefined(props.isActive);
+  const NotActiveSpoiler = <>{props.children}</>;
+  const ActiveSpoiler = (
     <div
       style={{
         position: "relative",
@@ -37,4 +41,5 @@ export default function Spoiler(props: ISpoiler) {
       </div>
     </div>
   );
+  return (isNotActive && NotActiveSpoiler) || ActiveSpoiler;
 }

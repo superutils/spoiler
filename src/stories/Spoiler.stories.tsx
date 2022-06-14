@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Spoiler } from "../index";
+import Spoiler from "../index";
 
 export default {
   title: "Spoiler",

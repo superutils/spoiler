@@ -1,3 +1,2 @@
 import Spoiler from "./components/Spoiler";
-
-export { Spoiler };
+export default Spoiler;
