@@ -1,6 +1,6 @@
 /// <reference types="react" />
 interface ISpoiler {
-    children?: JSX.Element | JSX.Element[];
+    children?: JSX.Element | JSX.Element[] | string | boolean;
     width?: string | number;
     height?: string | number;
     isActive?: boolean;

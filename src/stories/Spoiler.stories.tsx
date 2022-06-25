@@ -10,6 +10,7 @@ export default {
 const Template: ComponentStory<typeof Spoiler> = (args) => (
   <Spoiler {...args}>
     <p>HELLO, WORLD!</p>
+    <p>IT'S A BIG HIDDEN TEXT YOUUUUUUUUUU</p>
   </Spoiler>
 );
 
