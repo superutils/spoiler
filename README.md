@@ -11,3 +11,14 @@ npm i
 ```
 
 `npm run storybook` for testing
+
+## Usage:
+```tsx
+<Spoiler
+  width={/**not required**/}
+  height={/**not required**/}
+  isActive={/**not required**/}
+ >
+  <AnyComponent />
+</Spoiler>
+```
